@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : poppins, sans-serif;
+    overflow-x: hidden
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin-bottom: 100px;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    background: white;
+    padding: 0;
+    margin: none;
+    outline: 1px black solid;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header p{
+    top: 0;
+    color: lime;
+    left: 0;
+    margin-left: 30px;
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.header .headicon{
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-top: -35px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header .headicon .home{
+    margin-right: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.header .headicon .update{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.header .headicon .dosage{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .headicon .appointment{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.name .n1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.input .name{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.no .pn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+
+.input1 .no{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.foe .field{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 30px;
+}
+
+body select{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 375px;
+    margin-left: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}

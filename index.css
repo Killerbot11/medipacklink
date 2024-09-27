@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : poppins, sans-serif;
+    overflow-x: hidden
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin-bottom: 100px;
+}
+
+.digital-clock{
+    position: absolute;
+    margin-top: -300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    margin-left: 1000px;
+
+}
+
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    background: white;
+    padding: 0;
+    margin: none;
+    outline: 1px black solid;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header p{
+    top: 0;
+    color: lime;
+    left: 0;
+    margin-left: 30px;
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.header .headicon{
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-top: -35px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header .headicon .home{
+    margin-right: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.header .headicon .update{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.header .headicon .dosage{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .headicon .appointment{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.welcomemessage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    width: 30%;
+    background-color: white;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.welcomemessage p{
+    width: 100%;
+}
+
+.access{
+    top: 0;
+    left: 0;
+    margin-top: 175px;
+    position: absolute;
+    width: 30%;
+    background-color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.c1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 250px;
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: lime;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.c1:hover{
+    transform: scale(1.05);
+}
+
+.cd1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px black solid;
+    width: 250px;
+    margin-top: 400px;
+    margin-left: 55px;
+    padding: 10px;
+    box-shadow: 10px;
+    border-radius: 20px;
+    background-color: white;
+    background: white;
+}
+
+.cd1 p{
+    margin-bottom: 10px;
+}
+
+.cd1 .checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 175px;
+    margin-left: 70px;
+}
+
+.cd1 .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 207px;
+    margin-left: 60px;
+}
+
+
+
+
+.c2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 250px;
+    margin-left: 365px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    transition: 0.5s;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: lime;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cd2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px black solid;
+    width: 250px;
+    margin-top: 400px;
+    margin-left: 390px;
+    padding: 10px;
+    box-shadow: 10px;
+    border-radius: 20px;
+    background-color: white;
+    background: white;
+}
+
+.cd2 p{
+    margin-bottom: 10px;
+}
+.cd2 .checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 175px;
+    margin-left: 70px;
+}
+
+.cd2 .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 207px;
+    margin-left: 60px;
+}
+
+.c2:hover{
+    transform: scale(1.05);
+}
+
+.c3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 250px;
+    margin-left: 700px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    transition: 0.5s;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: lime;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cd3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    margin-top: 400px;
+    border: 1px black solid;
+    margin-left: 725px;
+    padding: 10px;
+    box-shadow: 10px;
+    border-radius: 20px;
+    background-color: white;
+    background: white;
+}
+
+.cd3 p{
+    margin-bottom: 10px;
+}
+
+.cd3 .checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 175px;
+    margin-left: 70px;
+}
+
+.cd3 .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 207px;
+    margin-left: 60px;
+}
+
+.c3:hover{
+    transform: scale(1.05);
+}
+
+.c4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 250px;
+    margin-left: 1040px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    transition: 0.5s;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: lime;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cd4    {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px black solid;
+    width: 250px;
+    margin-top: 400px;
+    margin-left: 1065px;
+    padding: 10px;
+    box-shadow: 10px;
+    border-radius: 20px;
+    background-color: white;
+    background: white;
+}
+
+.cd4 p{
+    margin-bottom: 10px;
+}
+
+.cd4 .checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 175px;
+    margin-left: 70px;
+}
+
+.cd4 .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 207px;
+    margin-left: 60px;
+}
+
+.c4:hover{
+    transform: scale(1.05);
+}
+
+.cd1 p .input{
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.cd2 p .input{
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.cd3 p .input{
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.cd4 p .input{
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 2px;
+    border: 2px solid black;
+}

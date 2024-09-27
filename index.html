@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="275984260042-1hmu4rn0o32b46j95irgf73q0v1anh16.apps.googleusercontent.com.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Authentication</title>
+</head>
+<body>
+    <h2 class="header">MediClip</h2>
+    <p class="text"></p>
+    <div class= "wrapper">
+        <h2>Sign in</h2>
+        <form action="">
+            <div class="email">
+                <input type="email", name="email", placeholder="Enter Email" required>
+            </div>
+            <div class="pass">
+                <input type="password", name="password", placeholder="Enter Password" required minlength="8" maxlength="16">
+            </div>
+            <div class="signin">
+            <a class="singinbutton" href="index.html">Sign in</a>
+            </div>
+        </form>
+    </div>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <meta name="google-signin-client_id" content="275984260042-1hmu4rn0o32b46j95irgf73q0v1anh16.apps.googleusercontent.com.">
+<script>
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+
+</body>
+    
+</body>
+</html>

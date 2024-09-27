@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : poppins, sans-serif;
+    overflow-x: hidden;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin-bottom: 100px;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    background: white;
+    padding: 0;
+    margin: none;
+    outline: 1px black solid;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header p{
+    top: 0;
+    color: lime;
+    left: 0;
+    margin-left: 30px;
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.header .headicon{
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-top: -35px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header .headicon .home{
+    margin-right: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.header .headicon .update{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.header .headicon .dosage{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .headicon .appointment{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.warning{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 140px;
+    margin-left: 30px;
+    font-size: 10px;
+    font-weight: 300;
+    color: grey;
+}
+
+
+
+.dropdown select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.headings{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 220px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.headings .sno{
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+}
+
+.headings .medicine{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 180px;
+}
+
+.headings .dow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1025px;
+}
+
+.headings .time{
+    margin-left: 700px;
+}
+
+.prescription-container {
+    display: block; /* Ensures that rows stack vertically */
+    margin-top: 300px; /* Space above the first row */
+}
+
+.updateprescriptions{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 275px;
+    background-color: white;
+    width: 1330px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.prescription-container {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: flex-start; /* Align blocks to the start of the container */
+    margin: 0 auto; /* Center the container */
+    max-width: 1400px; /* Control the width of the container */
+}
+
+/* Ensure inputs inside each row are properly spaced */
+.updateprescriptions input,
+.updateprescriptions select {
+
+    margin: 0 10px; /* Add space between inputs and selects */
+    margin-top: 300px;
+    flex-grow: 1; /* Allow inputs to grow to fill the space */
+}
+
+/* Optional: Style for the buttons (wrong and tick buttons) */
+.updateprescriptions button {
+    margin-left: 10px; 
+    margin-top: 300px;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+.updateprescriptions .sno{
+    top: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+.updateprescriptions .medicineinput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 150px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px black solid;
+} 
+
+.updateprescriptions .medicinetime{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 710px;
+    margin-top: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+.updateprescriptions select{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: 975px;
+    margin-top: 18px;
+    width: 150px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+
+.updateprescriptions .tick{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: 1250px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    height: 35px;
+}
+
+.updateprescriptions .tick img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.updateprescriptions .wrong{
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: 1200px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    margin-top: 16px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.updateprescriptions .wrong img{
+    width: 30px;
+    height: 30px;
+}
+
+.addbutton{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-left: 1030px;
+    margin-top: -350px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    border: 1px black solid;
+}
+
+
+.addbutton button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+

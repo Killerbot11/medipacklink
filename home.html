@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>MediPack</title>
+    <!--==================== Homepage===================================== -->
+</head>
+<body>
+    <!-- ====================live clock=================================== -->
+    <div class="digital-clock">
+        <div id="date"></div>
+        <div id="time"></div>
+    </div>
+
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById('time');
+            const dateElement = document.getElementById('date');
+                
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+                
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+            const year = now.getFullYear();
+                
+            timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+            dateElement.textContent = `${day}/${month}/${year}`;
+        }
+    
+        setInterval(updateTime, 1000); // Update every second
+        updateTime(); // Initial call to set the time and date immediately
+    </script>
+
+    <!--==================== Homepage===================================== -->
+    <div class="header">
+        <p>MediPack</p>
+        <div class="headicon">
+            <a class="home" href="">Home</a>
+            <a class="update" href="update.html">Update</a>
+            <a class="appointment" href="appointment.html">Appointment</a>
+        </div>
+    </div>
+    
+    
+    <div class="welcomemessage"><p>Welcome, Rahul Saxena</p></div>
+    
+    
+    <div class="access"><p>Access Medigear</p></div>
+
+
+    <c1 class="c1">
+        <p>Day</p>
+    </c1>  
+    <c1 class="c2">
+        <p>Afternoon</p>
+    </c1>
+    <c1 class="c3">
+        <p>Evening</p>
+    </c1>
+    <c1 class="c4">
+        <p>Night</p>
+    </c1>
+
+
+    <div class="cd1">
+        <p>Days of The Week: Monday, Wednesday, Friday</p>
+        <p>Medicines: Memantine, Donepezil</p>
+        <p>Time: 8:00am</p>
+        <p>Taken</p> 
+        <input class="checkbox" type="checkbox" name="taken">
+        <p>Left</p>
+        <p class="left">23</p>
+    </div>
+
+    <div class="cd2">
+        <p>Days of The Week: Monday, Tuesday</p>
+        <p>Medicines: Aricept</p>
+        <p>Time: 11:30am</p>
+        <p>Taken</p> 
+        <input class="checkbox" type="checkbox" name="taken">
+        <p>Left</p>
+        <p class="left">23</p>
+    </div>
+
+    <div class="cd3">
+        <p>Days of The week: Wednesday</p>
+        <p>Medicine: Galantamine</p>
+        <p>Time:5:30pm</p>
+        <p>Taken</p> 
+        <input class="checkbox" type="checkbox" name="taken">
+        <p>Left</p>
+        <p class="left">23</p>
+    </div>
+
+    <div class="cd4">
+        <p>Days of The Week:Saturday</p>
+        <p>Medicines: Galantamine</p>
+        <p>Time:8:00pm</p>
+        <p>Taken</p> 
+        <input class="checkbox" type="checkbox" name="taken">
+        <p>Left</p>
+        <p class="left">23</p>
+    </div>
+
+
+</body>
+</html>

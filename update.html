@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="update.js"></script>
+    <link rel="stylesheet" href="update.css">
+    <title>Update prescription</title>
+</head>
+<body>
+
+    <div class="header">
+        <p>MediPack</p>
+        <div class="headicon">
+            <a class="home" href="home.html">Home</a>
+            <a class="update" href="update.html">Update</a>
+            <a class="appointment" href="">Appointment</a>
+        </div>
+    </div>
+
+
+    <h2>Update your prescription</h2>
+    <p class="warning">make sure to do so only if advised or prescribed by your doctor</p>
+    
+    <div class="headings">
+        <p class="sno">S.No.</p>
+        <p class="medicine">Medicine</p>
+        <p class="time">Time</p>
+        <p class="dow">Days</p>
+    </div>
+    
+    
+    <div class="prescription-container">
+        <div class="updateprescriptions">
+            <p class="sno">1</p>
+            <input class="medicineinput" type="text" placeholder="Enter Medicine">
+            <input class="medicinetime" type="time">
+            <select name="medicineday">
+                <option value="chooseday">Choose day</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+            <button class="wrong"><img src="cross.png"></button>
+            <button class="tick"><img src="tick.png"></button>
+        </div>
+    </div>
+    
+    <div class="addbutton">
+        <button>Add prescription</button>
+    </div>
+    
+<!-- ====================javascript the above html========================== -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const addButton = document.querySelector('.addbutton button');
+
+    addButton.addEventListener('click', function () {
+        // Create a new block for the prescription
+        const newPrescriptionBlock = document.createElement('div');
+        newPrescriptionBlock.classList.add('updateprescriptions');
+
+        // Set up the HTML structure for the new prescription block
+        newPrescriptionBlock.innerHTML = `
+            <p class="sno">New</p>
+            <input class="medicineinput" type="text" placeholder="Enter medicine">
+            <input class="medicinetime" type="time">
+            <select name="medicineday">
+                <option value="chooseday">Choose day</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+            <button class="wrong"><img src="cross.png"></button>
+            <button class="tick"><img src="tick.png"></button>
+        `;
+
+        // Find the last prescription block to determine the S.No.
+        const lastPrescription = document.querySelector('.updateprescriptions:last-of-type');
+        if (lastPrescription) {
+            const currentSno = parseInt(lastPrescription.querySelector('.sno').innerText);
+            newPrescriptionBlock.querySelector('.sno').innerText = currentSno + 1; // Increment S.No.
+        } else {
+            newPrescriptionBlock.querySelector('.sno').innerText = 1; // First row
+        }
+
+        // Add margin to create separation between blocks
+        newPrescriptionBlock.style.marginTop = '20px'; // Adjust margin as needed
+
+        // Append the new prescription block to the prescription container
+        document.querySelector('.prescription-container').appendChild(newPrescriptionBlock);
+    });
+});
+
+</script>
+
+</body>
+</html>
